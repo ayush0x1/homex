@@ -1,2 +1,1 @@
-# homex
-A modern homepage focused on privacy and performance.
+<img src="icon128.png">
