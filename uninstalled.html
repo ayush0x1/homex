@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>homex</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+
+    <!-- SIMPLE STYLE -->
+    <style>
+
+
+    html{
+     height:100%;
+     width:100vw;
+     background-color:#1c1c20;
+     color:white;
+      }
+
+
+
+   p {
+     font-family: 'Open Sans', sans-serif;
+   }
+   h1 {
+       font-family: "Borel", cursive;
+   }
+
+
+      body {
+        margin: 0;
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+
+</head>
+<body class="h-[100vh] w-[100vw] bg-black text-white flex items-center justify-center bg-[url('https://res.cloudinary.com/dunwz8exc/image/upload/v1790250410/wall7_y5hzvc.webp')] bg-cover">
+
+    <div class="h-[100vh] w-[100vw] bg-[rgba(0,0,0,0.3)] backdrop-blur border-white flex justify-center items-center flex-col">
+
+         <div class="h-[10vh] w-[10vw]  border-white flex justify-center items-center flex-col">
+
+        <h1 id="wtext" class="mt-2 text-white text-5xl font-semibold">bye</h1>
+         </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/4.5.0/anime.umd.min.js" integrity="sha512-dnhflec5WaXvpVYrt0oWfe0iUyWpjNiZbxkjrhNu9WAWWHLX7VqqyxCZHL7dWCrwj6lN+XGN9FtiWIBgX2b/PA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+      // 1. Destructure the animate function from the global anime object
+      const { animate } = anime;
+
+      // 2. Call animate instead of anime
+      animate('#wtext', {
+          opacity: [0, 1],
+          translateY: [30, 0],
+          scale: [0.9, 1],
+          filter: ['blur(4px)', 'blur(0px)'],
+          duration: 1600,
+          easing: 'cubicBezier(0.25, 1, 0.5, 1)',
+          delay: 300
+      });
+
+  });
+
+  </script>
+
+
+<script data-goatcounter="https://ayush0x1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
